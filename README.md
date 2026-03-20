@@ -42,16 +42,22 @@ The Model Pipeline
 
 Input Image (any size)
     ↓
+    
 Resize to 224×224
     ↓
+    
 Normalize (ImageNet mean/std)
     ↓
+    
 EfficientNetB0 backbone (pretrained ImageNet weights)
     ↓
+    
 Custom classification head (38 output classes)
     ↓
+    
 Softmax → probability distribution across 38 classes
     ↓
+    
 Top prediction + confidence score
 
 
